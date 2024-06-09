@@ -1,0 +1,202 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'haken';
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+:root{
+    --circle-color: hsl(256, 72%, 46%, 1);
+    --div-color: hsl(256, 91%, 58%);
+    --min-main-width: 370px;
+    --main-width: calc(var(--min-main-width) * 2);
+    --ash: hsl(241, 100%, 89%);
+    --radius: 30px;
+    
+}
+.main{
+    display: flex;
+    box-shadow: 0px 0px 10px 10px var(--ash);
+    border-radius: var(--radius);
+    margin: 100px auto;
+    width: var(--main-width);
+}
+body{
+    font-family: 'haken';
+    font-size: 18px;
+    
+}
+.min{
+  
+}
+.num{
+    font-size: 70px;
+    font-weight: 800;
+}
+.min-main1{
+    text-align: center;
+    background: var(--div-color);
+    color: var(--ash);
+    width: var(--min-main-width);
+    padding: 25px 50px;
+    border-radius: var(--radius);
+    
+}
+.ash{
+    
+}
+h1.ash{
+    font-size: 70px;
+    margin: 0;
+    color: white;
+}
+
+h3{
+    font-weight: 700;
+}
+.ash2{
+    margin: 0;
+    text-align: center;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom, var(--circle-color), var(--div-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.great{
+    color: white;
+}
+.score{
+    color: hsl(221, 100%, 96%);
+    font-weight: 500;
+}
+
+/* DIV 2 */
+.min-main2{
+    width: var(--min-main-width);
+    padding: 20px;
+}
+.button{
+    display: flex;
+    margin: 15px;
+    border-radius: 10px;
+    position: relative;
+    font-weight: 600;
+}
+
+.button >:nth-child(3){
+    margin-left: auto;
+    margin-right: 20px;
+}
+img{
+    margin: auto 10px;
+}
+span{
+    color: var(--ash);
+}
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.memory{
+    background-color: hsla(39, 100%, 56%, .1);
+}
+.verbal{
+    background-color: hsla(166, 100%, 37%,.1);
+}
+.visual{
+    background-color: hsla(234, 85%, 45%,.1);
+}
+.reaction > :nth-child(2){
+    color: hsl(0, 100%, 67%);
+}
+.memory > :nth-child(2){
+    color: hsl(39, 100%, 56%);
+}
+.verbal > :nth-child(2){
+    color: hsl(166, 100%, 37%);
+}
+.visual > :nth-child(2){
+    color: hsl(234, 85%, 45%);
+}
+.btn{
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    font-size: 18px;
+    padding: 18px 10px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    margin: 25px auto;
+}
+@media (max-width: 790px) {
+    .main{
+        max-width: 700px;
+        margin-top: 70px;
+    }
+    h1.ash{
+        font-size: 65px;;
+    }
+    .circle{
+        width: 180px;
+        height: 180px;
+    }
+    .min{
+        max-width: 360px;
+    }
+    .btn{
+        max-width: 300px
+    }
+}
+@media (max-width: 729px) {
+    .main{
+        display: block;
+        width: var(--min-main-width);
+        padding: 0;
+        
+    }
+    .min{
+        width: 100%;
+        margin: 0 auto;
+}
+    body{
+        margin: 0;
+        /* overflow-x: hidden; */
+    }
+}
+@media (max-width: 375px) {
+   
+    .main{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        
+    }
+    .min{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-top: 5px;
+    }
+    .min-main1{
+        padding: 5px 20px 25px;
+    }
+    .score, .great{
+        margin: 10px;
+    }
+    .score{
+        font-size: 16px;
+    }
+    .button{
+        margin: 12px;
+       
+    }
+    /* .btn{ 
+        max-width: 100px;
+    } */
+}
